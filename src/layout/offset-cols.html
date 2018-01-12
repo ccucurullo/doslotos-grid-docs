@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ @@include('../include/head.html', { "title": "Botones" })
+</head>
+ @@include('../include/main-nav.html')
+  <h1>Layout</h1>
+  <a href="https://github.com/ccucurullo/dsgrid" class="download-btn"><div class="download icon"></div></a>
+</header>
+
+<section class="initial">
+  <div class="container">
+    <div class="row">
+      <div class="col-xxs-12">
+        <h2>Columns Offset</h2>
+        <p>En nuestro layout podemos dejar un espacio vacío de X columnas utilizando la clase <em>col-(breakpoint)-offset-#</em>. Esta clase hace que nuestro elementos deje un 'margen izquierdo' de X columnas.</p>
+        <div class="example-holder">
+          <div class="row">
+            <div style="min-height: 120px;" class="col-md-4">MD-4</div>
+            <div style="min-height: 120px;" class="col-md-4 col-md-offset-4">MD-4 MD-Offset 4</div>
+          </div>
+          <div class="row">
+            <div style="min-height: 120px;" class="col-md-8 col-md-offset-4">MD-8 MD-Offset 4</div>
+          </div>
+          <div class="row">
+            <div style="min-height: 120px;" class="col-xs-10 col-xs-offset-2">XS-10 XS-Offset 2</div>
+          </div>
+        </div>
+<code><pre>
+&lt;div class="row"&gt;<br />
+  &lt;div class="col-md-4"&gt;...&lt;/div&gt;<br />
+  &lt;div class="col-md-4 col-md-offset-4"&gt;...&lt;/div&gt;<br />
+&lt;/div&gt;
+</pre></code>
+      </div> <!-- Main Column -->
+    </div> <!-- Main Row -->
+  </div> <!-- Main Container -->
+</section>
+
+@@include('../include/pre-footer.html')
+</div>
+ @@include('../include/footer.html')
+</body>
+
+</html>

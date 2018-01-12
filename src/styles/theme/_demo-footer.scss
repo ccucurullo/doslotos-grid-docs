@@ -1,0 +1,31 @@
+// Footer Style
+//---------------------------------------------------------------------------------------
+.prefooter{
+	border-top: 1px solid #eee;
+	margin-top: 40px;
+	padding: 20px 0;
+	font-size: 12px;
+	color: #999;
+	span{
+		color: #222;
+		&.autor{
+			@media (max-width: 410px){
+				display: none;
+			}
+		}
+	}
+	p{
+		@media (min-width: 410px){
+			display: none;
+		}
+	}
+	a{
+		color:#666;
+		@media (min-width: $device-lg){
+			text-decoration: none;
+		}
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}

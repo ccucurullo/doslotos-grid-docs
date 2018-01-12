@@ -1,0 +1,12 @@
+// Demo Variables
+//---------------------------------------------------------------------------------------
+.page{
+	@include animation($main-animation);
+	margin-left: 240px;
+	padding: 0 40px;
+	overflow: hidden;
+	@media (max-width: 1280px){
+		margin-left: 0;
+		padding: 0;
+	}
+}

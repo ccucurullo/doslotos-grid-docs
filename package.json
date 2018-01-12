@@ -1,0 +1,36 @@
+{
+    "name": "dsgrid_docs",
+    "version": "0.0.1",
+    "description": "Documentation for Dsgrid framework",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:javialon26/dsgrid_docs.git"
+    },
+    "author": "Javier Alonso Shannon",
+    "license": "ISC",
+    "homepage": "https://github.com/javialon26/dsgrid_docs",
+    "devDependencies": {
+        "browser-sync": "^2.18.8",
+        "del": "^2.2.2",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^4.0.0",
+        "gulp-cachebust": "^0.0.6",
+        "gulp-concat": "^2.6.1",
+        "gulp-cssnano": "^2.1.2",
+        "gulp-file-include": "^1.1.0",
+        "gulp-filter": "^5.0.0",
+        "gulp-flatten": "^0.3.1",
+        "gulp-htmlmin": "^3.0.0",
+        "gulp-imagemin": "^3.2.0",
+        "gulp-pixrem": "^1.0.0",
+        "gulp-plumber": "^1.1.0",
+        "gulp-sass": "^3.1.0",
+        "gulp-uglify": "^2.1.2",
+        "gulp-usemin": "^0.3.28",
+        "run-sequence": "^1.2.2"
+    },
+    "dependencies": {
+        "dsgrid": "https://github.com/ccucurullo/dsgrid",
+        "jquery": "^3.2.1"
+    }
+}

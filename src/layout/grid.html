@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ @@include('../include/head.html', { "title": "Botones" })
+</head>
+ @@include('../include/main-nav.html')
+  <h1>Layout</h1>
+  <a href="https://github.com/ccucurullo/dsgrid" class="download-btn"><div class="download icon"></div></a>
+</header>
+
+<section class="initial">
+  <div class="container">
+    <div class="row">
+      <div class="col-xxs-12">
+        <h2>Grilla</h2>
+        <p>Al igual que en <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> las columnas se definen utilizando clases tales como <em>col-xxs-#</em>, <em>col-xs-#</em>, <em>col-sm-#</em>, <em>col-md-#</em>, <em>col-lg-#</em></p>
+        <div class="example-holder">
+          <div class="row">
+            <div class="col-xs-1">XS-1</div>
+            <div class="col-xs-1">XS-1</div>
+            <div class="col-xs-1">XS-1</div>
+            <div class="col-xs-1">XS-1</div>
+            <div class="col-xs-1">XS-1</div>
+            <div class="col-xs-1">XS-1</div>
+            <div class="col-xs-1">XS-1</div>
+            <div class="col-xs-1">XS-1</div>
+            <div class="col-xs-1">XS-1</div>
+            <div class="col-xs-1">XS-1</div>
+            <div class="col-xs-1">XS-1</div>
+            <div class="col-xs-1">XS-1</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-2">XS-2</div>
+            <div class="col-xs-2">XS-2</div>
+            <div class="col-xs-2">XS-2</div>
+            <div class="col-xs-2">XS-2</div>
+            <div class="col-xs-2">XS-2</div>
+            <div class="col-xs-2">XS-2</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">XS-3</div>
+            <div class="col-xs-3">XS-3</div>
+            <div class="col-xs-3">XS-3</div>
+            <div class="col-xs-3">XS-3</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4">XS-4</div>
+            <div class="col-xs-4">XS-4</div>
+            <div class="col-xs-4">XS-4</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">XS-6</div>
+            <div class="col-xs-6">XS-6</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">XS-12</div>
+          </div>
+          <div class="row">
+            <div class="col-xxs-4">XXS-4</div>
+            <div class="col-xxs-4">XXS-4</div>
+            <div class="col-xxs-4">XXS-4</div>
+          </div>
+        </div>
+<code><pre>
+&lt;div class="row"&gt;<br />
+  &lt;div class="col-xs-6"&gt;...&lt;/div&gt;<br />
+  &lt;div class="col-xs-6"&gt;...&lt;/div&gt;<br />
+&lt;/div&gt;<br />
+&lt;div class="row"&gt;<br />
+  &lt;div class="col-xxs-4"&gt;...&lt;/div&gt;<br />
+  &lt;div class="col-xxs-8"&gt;...&lt;/div&gt;<br />
+&lt;/div&gt;
+</pre></code>
+        <p><small>NOTA: la clase <em>col-xxs-#</em> 'flota' eternamente.</small></p>
+      </div> <!-- Main Column -->
+    </div> <!-- Main Row -->
+  </div> <!-- Main Container -->
+</section>
+<hr />
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xxs-12">
+        <h2>Grid Combination</h2>
+        <p>Las columnas pueden combinarse entre si para formar diferentes layouts y reacomodarse según la resolución.</p>
+        <div class="example-holder">
+          <div class="row">
+            <div class="col-sm-6 col-md-3">SM-6 / MD-3</div>
+            <div class="col-sm-6 col-md-3">SM-6 / MD-3</div>
+            <div class="col-sm-6 col-md-3">SM-6 / MD-3</div>
+            <div class="col-sm-6 col-md-3">SM-6 / MD-3</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-2 col-md-3 col-lg-4">SM-2 / MD-3 / LG-4</div>
+            <div class="col-sm-5 col-md-6 col-lg-4">SM-5 / MD-6 / LG-4</div>
+            <div class="col-sm-5 col-md-3 col-lg-4">SM-5 / MD-3 / LG-4</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-2">SM-2</div>
+            <div class="col-sm-8">SM-8</div>
+            <div class="col-sm-2">SM-2</div>
+          </div>
+        </div>
+<code><pre>
+&lt;div class="row"&gt;<br />
+  &lt;div class="col-sm-2 col-md-3 col-lg-4"&gt;...&lt;/div&gt;<br />
+  &lt;div class="col-sm-5 col-md-6 col-lg-4"&gt;...&lt;/div&gt;<br />
+  &lt;div class="col-sm-5 col-md-3 col-lg-4"&gt;...&lt;/div&gt;<br />
+&lt;/div&gt;
+</pre></code>
+      </div> <!-- Main Column -->
+    </div> <!-- Main Row -->
+  </div> <!-- Main Container -->
+</section>
+<hr />
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xxs-12">
+        <h2>Anidado columns</h2>
+        <p>Flexibilidad para anidar columans logrando layouts más complejos.</p>
+        <div class="example-holder">
+          <div class="row">
+            <div class="col-xs-12">
+              XS-12 (parent)<br /><br />
+              <div class="row">
+                <div style="min-height: 80px;" class="col-xs-8 col-sm-6">XS-8 / SM-6 (child)</div>
+                <div style="min-height: 80px;" class="col-xs-4 col-sm-6">XS-4 / SM-6(child)</div>
+              </div>
+            </div>
+        </div>
+      </div>
+    <code><pre>
+&lt;div class="row"&gt;<br />
+  &lt;div class="col-xs-12"&gt;<br />
+    &lt;div class="row"&gt;<br />
+      &lt;div class="col-xs-8 col-sm-6"&gt;...&lt;/div&gt;<br />
+      &lt;div class="col-xs-4 col-sm-6"&gt;...&lt;/div&gt;<br />
+    &lt;/div&gt;<br />
+  &lt;/div&gt;<br />
+&lt;/div&gt;
+    </pre></code>
+      </div> <!-- Main Column -->
+    </div> <!-- Main Row -->
+  </div> <!-- Main Container -->
+</section>
+
+
+@@include('../include/pre-footer.html')
+</div>
+ @@include('../include/footer.html')
+</body>
+
+</html>

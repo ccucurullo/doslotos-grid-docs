@@ -1,0 +1,177 @@
+// Demo Variables
+//---------------------------------------------------------------------------------------
+// Header & Nav
+//---------------------------------------------------------------------------------------
+header{
+	@include animation($main-animation);
+	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+	position: fixed;
+	top:0;
+	left:240px;
+	right:0;
+	background-color: $brand-primary;
+	z-index: 999;
+	padding:16px 15px;
+	@media (max-width: 1280px){
+		left: 0;
+	}
+	// page title
+	h1{
+		color: #fff;
+		display: inline;
+		font-size: 20px;
+    font-weight: 300;
+    line-height: 1.16667em;
+		margin:0;
+	}
+	// Toggle button
+	> .toggle {
+		border: 0;
+		background-color: transparent;
+		outline: none;
+		border: 0;
+		display: inline-block;
+		background-color: transparent;
+		background-image: none;
+		text-align: center;
+		white-space: nowrap;
+		cursor: pointer;
+		touch-action: manipulation;
+		user-select: none;
+		position: relative;
+		top: 2px;
+		@media (min-width: 1280px){
+			display: none;
+		}
+	}
+
+	> .toggle > .icon {
+		position: relative;
+		margin-top: 8px;
+		margin-bottom: 8px;
+		&,
+		&:before,
+		&:after {
+			display: block;
+			width: 20px;
+			height: 2px;
+			transition: background-color 0.15s linear, transform 0.15s linear;
+			background-color: #fff;
+		}
+		&:before,
+	  &:after {
+	    position: absolute;
+	    content: "";
+	  }
+		&:before {
+	    top: -6px;
+	  }
+		&:after {
+	    top: 6px;
+	  }
+	}
+}
+
+aside.navigation{
+	@include animation($main-animation);
+	background-color: #fff;
+	width: 240px;
+	position: fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	z-index: 9999;
+	overflow-y: auto;
+	border-right: 1px solid #eee;
+	@media (max-width: 1280px){
+		left: -260px;
+		border: none;
+		box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+	}
+	&.active{
+		left: 0;
+	}
+	// header
+	.aside-head{
+		padding: 9px 15px;
+		border-bottom: 1px solid #eee;
+		line-height: 1.2;
+		a{
+			display: block;
+			color: #656565;
+			text-decoration: none;
+			font-weight: 600;
+			font-size: 18px;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+		small{
+			font-size: 70%;
+		}
+	}
+	// nav
+	ul{
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		li{
+			a{
+				display: block;
+				padding: 8px 24px;
+				font-weight: 500;
+				font-size: 16px;
+				color: #454545;
+				text-decoration: none;
+				&:hover{
+					background-color: #f1f1f1;
+				}
+				&:focus{
+					outline: none;
+				}
+			}
+			ul{
+				margin:0 !important;
+				li{
+					a{
+						font-weight: 400;
+						padding-left: 34px !important;
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+
+	// dropdown style for demo
+	.dropdown.open ul{
+		position: relative !important;
+		background-color: transparent !important;
+	}
+	.dropdown > a:after{
+		width: 6px;
+		height: 6px;
+		position:absolute;
+		right: 24px;
+		top: 14px;
+
+	}
+}
+
+// Main site overlay
+.overlay{
+	display: block;
+	position: fixed;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9998;
+	background-color: rgba(0, 0, 0, .6);
+	opacity: 0;
+	visibility: hidden;
+	&.overlay-active{
+		opacity: 1;
+		visibility: visible;
+	}
+}
