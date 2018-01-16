@@ -33,12 +33,17 @@ body{
 		p > small{
 			font-size: 80%;
 			font-style: italic;
+			display: block;
+			padding: 5px;
+			background-color: #fff;
+			border: 2px solid #333;
 		}
 		code{
-			background-color: #eee;
+			background-color: #333;
 			padding: 20px;
 			margin-top: 0;
 			display: block;
+			color: #fff;
 			pre{
 				line-height: .95;
 				font-size: 13px;

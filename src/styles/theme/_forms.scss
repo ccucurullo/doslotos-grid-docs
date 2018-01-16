@@ -525,14 +525,6 @@ form{
 
 
 
-
-
-
-
-
-
-
-
 .masonry-layout { /* Masonry container */
     column-count: 4;
     column-gap: 1em;
@@ -549,16 +541,18 @@ form{
     display: inline-block;
     margin: 0 0 1em;
     width: 100%;
+    @include main-deep(2);
     h3{
-      background-color: $brand-primary;
-      color:#fff !important;
-      text-align: center;
-      padding: 10px 0;
+      background-color: #fff;
+      font-size: 18px !important;
+      line-height: 1.6 !important;
+      padding: 10px;
       margin: 0 !important;
+      border-bottom: 1px solid #eee;
     }
     p{
       padding: 10px;
-      font-size: 16px;
+      font-size: 14px;
     }
 }
 
@@ -570,7 +564,7 @@ form{
 
 
 
-$gridBox-height: 90px !default; // cantidad de columnas de la grilla 
+$gridBox-height: 90px !default; // cantidad de columnas de la grilla
 $grid-main-padding: 0 !default;
 $grid-column-space: $grid-main-padding !default;
 

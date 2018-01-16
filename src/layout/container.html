@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ @@include('../include/head.html', { "title": "Botones" })
+</head>
+ @@include('../include/main-nav.html')
+  <h1>Layout</h1>
+  <a href="https://github.com/ccucurullo/dsgrid" class="download-btn"><div class="download icon"></div></a>
+</header>
+
+<section class="initial">
+  <div class="container">
+      <h2>Fixed Container</h2>
+  </div>
+  <div class="container" style="border:1px solid #333;background-color:#eee;height:250px;">&nbsp;</div>
+  <div class="container">
+<code><pre>
+&lt;div class="container"&gt;<br />
+  ...<br />
+&lt;/div&gt;
+</pre></code>
+</div>
+</section>
+<hr />
+<section class="initial">
+  <div class="container">
+      <h2>Fluid Container</h2>
+  </div>
+  <div class="container-fluid" style="border:1px solid #333;background-color:#eee;height:250px;">&nbsp;</div>
+  <div class="container-fluid">
+<code><pre>
+&lt;div class="container-fluid"&gt;<br />
+  ...<br />
+&lt;/div&gt;
+</pre></code>
+</div>
+</section>
+@@include('../include/pre-footer.html')
+</div>
+ @@include('../include/footer.html')
+</body>
+
+</html>
