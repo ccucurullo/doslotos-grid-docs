@@ -533,11 +533,8 @@ form{
 
 
 
-
-
-
 .masonry-layout { /* Masonry container */
-    column-count: 3;
+    column-count: 4;
     column-gap: 1em;
     @media (max-width: 768px){
       column-count: 2;
@@ -563,4 +560,60 @@ form{
       padding: 10px;
       font-size: 16px;
     }
+}
+
+
+
+
+
+
+
+
+
+$gridBox-height: 90px !default; // cantidad de columnas de la grilla 
+$grid-main-padding: 0 !default;
+$grid-column-space: $grid-main-padding !default;
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax($gridBox-height, 1fr));
+    grid-gap: $grid-column-space;
+    grid-auto-rows: minmax($gridBox-height, auto);
+    grid-auto-flow: dense;
+    padding: $grid-main-padding;
+}
+
+.grid-item {
+    padding: 1rem;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: 3px solid #f1f1f1;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.col-4{
+  grid-column-end: span 4;
+}
+.col-3{
+  grid-column-end: span 3;
+}
+.row-2{
+  grid-row-end: span 2;
+}
+.row-4{
+  grid-row-end: span 4;
+}
+.span-2 {
+    grid-column-end: span 8;
+    grid-row-end: span 2;
+}
+
+.span-3 {
+    grid-column-end: span 3;
+    grid-row-end: span 4;
+}
+.span-4 {
+    grid-column-end: span 2;
+    grid-row-end: span 5;
 }
