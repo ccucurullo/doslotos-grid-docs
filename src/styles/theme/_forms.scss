@@ -569,11 +569,9 @@ $grid-column-space: $grid-main-padding !default;
     padding: $grid-main-padding;
     @media (max-width: 992px){
       grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-      grid-auto-rows: minmax(50%, auto);
     }
     @media (max-width: 500px){
       grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-      grid-auto-rows: minmax(100%, auto);
     }
 }
 
@@ -594,8 +592,11 @@ $grid-column-space: $grid-main-padding !default;
     }
 }
 
-.col-3{
-  grid-column-end: span 3;
+.col-2{
+  grid-column-end: span 2;
+  @media (max-width: 500px){
+    grid-column-end: span 1;
+  }
 }
 .row-2{
   grid-row-end: span 2;
