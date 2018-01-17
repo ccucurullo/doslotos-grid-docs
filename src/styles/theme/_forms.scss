@@ -525,8 +525,9 @@ form{
 
 
 
-
-
+.masonry-layout{
+  padding: 10px;
+}
 .item { /* Masonry bricks or child elements */
     background-color: #fff;
     display: inline-block;
@@ -566,29 +567,48 @@ $grid-column-space: $grid-main-padding !default;
     grid-auto-rows: minmax($gridBox-height, auto);
     grid-auto-flow: dense;
     padding: $grid-main-padding;
+    @media (max-width: 992px){
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+      grid-auto-rows: minmax(50%, auto);
+    }
+    @media (max-width: 500px){
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+      grid-auto-rows: minmax(100%, auto);
+    }
 }
 
 .grid-item {
-    padding: 1rem;
-    font-size: 12px;
-    text-transform: uppercase;
     border: 3px solid #f1f1f1;
     background-color: #fff;
-    border-radius: 5px;
+    h3{
+      background-color: #fff;
+      font-size: 18px !important;
+      line-height: 1.6 !important;
+      padding: 10px;
+      margin: 0 !important;
+      border-bottom: 1px solid #eee;
+    }
+    p{
+      padding: 10px;
+      font-size: 14px;
+    }
 }
 
 .col-3{
   grid-column-end: span 3;
+}
+.row-2{
+  grid-row-end: span 2;
+}
+.row-2{
+  grid-row-end: span 2;
 }
 .row-3{
   grid-row-end: span 3;
 }
-
-.col-3{
-  grid-column-end: span 3;
+.row-4{
+  grid-row-end: span 4;
 }
-
-
  .row-5{
    grid-row-end: span 5;
  }
