@@ -14,15 +14,15 @@
     <div class="row">
       <div class="col-xxs-12">
         <h2>Qué es <strong>dosLotos</strong>Grid?</h2>
-        <p>Es un framework CSS basado en Flexbox que te permite crear estructuras con gran rapidez. <strong>dosLotos</strong>Grid cuenta con los componentes indispensable para poder crear un sitio web.</p>
+        <p>Es un framework CSS basado en Flexbox que te permite crear estructuras con gran rápidez.</p>
         <p><strong>dosLotos</strong>Grid esta testeado corss-browser y multiplataforma. Es compatible con todos los sistemas operativos y su grilla principal es totalmente adpatable para desarrollos de aplicaciones mobiles en React.js u otros lenguajes.</p>
         <hr />
 
         <h2>Por qué cree <strong>dosLotos</strong>Grid?</h2>
-        <p>Por años use Bootstrap desde su primera versión hasta su ultimo release y realmente me parece un framework excelente pero siempre pense que se podian agregar componentes y/o comportamientos para poder tener un abanico mayor a la hora de comenzar un desarrollo.</p>
-        <p>Muchas cosas rescate de Bootstrap a la hora de crear <strong>dosLotos</strong>Grid por ejemplo la nomenclkatura se  sus clases para las distintas resoluciones, la grilla de 12 columnas y las alineaciones de las mismas que combinado con Flexbox crean un infinito universo de posibles estructuras.</p>
-        <p><strong>dosLotos</strong>Grid se creó con el objetivo de darle la tranquilidad al desarrollador que no va a tener que pisar o editar CSS de más, no tiene que apegarse 100% a un framewrok para crear un sitio y mucho menos tener problemas de compatibilidad entre el framework y el plugin que desee instalar.</p>
-        <p>En pocas palabras, <strong>dosLotos</strong>Grid es el paso inicial, lo complejo, lo 'dificil de hacer'. Una vez instalado solo hay que 'maquillarlo'.</p>
+        <p>Por años use Bootstrap desde su primera versión hasta su ultimo release y realmente me parece un framework excelente. Con el correr del tiempo me fui dando cuenta que en mis desarrollos no solo utilizaba solo la grilla de bootstrap sino que a veces tener todo el css me traia algunos dolores de cabeza.</p>
+        <p>Fue entoncés cuando decidí crear <strong>dosLotos</strong>Grid. Una estructura solida 100% flexible con un conjunto de utilidades básicas que son el punto de partida de tu desarrollo. De ahí en adelante las deciciones de diseño, los componentes y el JS a utilizar corren por tu cuenta.</p>
+
+
         <hr />
 
         <h2>Quiénes Pueden utilizarlo?</h2>
@@ -32,63 +32,48 @@
         <h2>Que me ofrece <strong>dosLotos</strong>Grid?</h2>
         <p>La estructura de archivos de <strong>dosLotos</strong>Grid es muy simple. La detallo a continuación:</p>
 <code><pre>
-src/
+
+grid/
 │
-├── styles/
+├── mixins/
 │   │
-│   ├── mixins/
-│   │   │
-│   │   ├── _border-radius.scss
-│   │   │
-│   │   ├── _box-shadow.scss
-│   │   │
-│   │   ├── _element-align.scss
-│   │   │
-│   │   ├── _global.scss
-│   │   │
-│   │   ├── _grid.scss
-│   │   │
-│   │   ├── _positions.scss
-│   │   │
-│   │   ├── _responsive-wrapper.scss
-│   │   │
-│   │   ├── _retina-img.scss
-│   │   │
-│   │   ├── _shapes.scss
-│   │   │
-│   │   └── _transitions.scss
+│   ├── _border-radius.scss
 │   │
-│   ├── utilities/
-│   │   │
-│   │   ├── _color-classes.scss
-│   │   │
-│   │   ├── _images.scss
-│   │   │
-│   │   └── _text-align.scss
+│   ├── _box-shadow.scss
 │   │
-│   ├── _buttons.scss
-│   │
-│   ├── _cards.scss
-│   │
-│   ├── _forms.scss
+│   ├── _element-align.scss
 │   │
 │   ├── _global.scss
 │   │
 │   ├── _grid.scss
 │   │
-│   ├── _hero.scss
+│   ├── _positions.scss
 │   │
-│   ├── _navbar.scss
+│   ├── _responsive-wrapper.scss
 │   │
-│   ├── _reset.scss
+│   ├── _retina-img.scss
 │   │
-│   ├── _tables.scss
+│   ├── _shapes.scss
 │   │
-│   └── _variables.scss
+│   ├── _transitions.scss
+│   │
+│   └── _zindex.scss
 │
-└── js/
-    │
-    └── global.js
+├── utilities/
+│   │
+│   ├── _images.scss
+│   │
+│   └── _text-align.scss
+│
+├── _global.scss
+│
+├── _grid.scss
+│
+├── _navbar.scss
+│
+├── _reset.scss
+│
+└── _variables.scss
         </pre></code>
         <hr />
 

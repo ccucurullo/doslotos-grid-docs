@@ -1,0 +1,77 @@
+// Hero Banners Variables
+//-----------------------------
+$hero-main-height:      450px !default;
+
+// Hero Banners & Intros
+//-----------------------------
+.hero{
+  @extend .display-flex;
+	@include flex-wrap(wrap);
+	@include flex-direction();
+  &.hero-center{
+    @include align-items(center);
+    @include justify-content(center);
+    text-align: center;
+  }
+  //__ Reset all banner elements
+  .tagline > *{
+    margin: 0;
+  }
+}
+
+//__ Hero Full Height
+.hero-full-height{
+  min-height: 100vh;
+}
+//__ Hero Controled Height
+.hero-height{
+  min-height: $hero-main-height;
+}
+
+
+
+
+// Main BTNs
+//-----------------------------
+.btn{
+  @extend  .display-inline-flex;
+  @include flex-wrap(wrap);
+  @include align-items(center);
+  @include justify-content(center);
+  @include border-radius(0);
+  @include hover-animation{
+    @include animation(0.15s ease-in-out);
+  }
+  text-decoration: none;
+  margin-top: 5px;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  &.btn-default{
+    border-color: lighten(#444444, 50%);
+    background-color: transparent;
+    color: #444444;
+    &:active,
+    &:focus,
+    &:hover{
+      background-color: lighten(#444444, 50%);
+    }
+  }
+
+}
+
+// Rounded Buttons
+.btn-rounded{
+  @include border-radius(25px);
+}
+
+// Shadow Buttons
+.btn-shadow{
+  @include main-deep(2);
+  &:hover{
+    @include main-deep(4);
+  }
+  &:active,
+  &:focus{
+    @include main-deep(1);
+  }
+}

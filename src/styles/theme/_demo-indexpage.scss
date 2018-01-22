@@ -51,13 +51,13 @@ body#grid-home{
 		}
 		.btn-download{
 			@include box-shadow(1px 2px 6px rgba(0,0,0,0.3));
-			background-color: $brand-secondary;
-			border-color: $brand-secondary;
+			background-color: #F31A3E;
+			border-color: #F31A3E;
 			&:hover,
 			&:active,
 			&:focus{
 				@include box-shadow(2px 3px 12px rgba(0,0,0,0.5));
-				background-color: $brand-secondary;
+				background-color: #F31A3E;
 			}
 		}
 	}
