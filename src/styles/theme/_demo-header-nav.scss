@@ -175,3 +175,31 @@ aside.navigation{
 		visibility: visible;
 	}
 }
+
+
+// navbar examples for docs
+.demo-navbar{
+	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+	background-color: #6e45e2;
+	left:0;
+	padding:0;
+	a{
+		color: #fff;
+	}
+	.navbar > .nav {
+		@media (max-width: $navbar-collapse) {
+			background-color: darken(#6e45e2, 15%);
+		}
+	}
+	// bar icon
+	.navbar > .toggle > .icon {
+		&,
+		&:before,
+		&:after {
+			background-color: #fff;
+		}
+	}
+	.navbar > .toggle.toggle-active > .icon {
+		background-color: transparent;
+	}
+}

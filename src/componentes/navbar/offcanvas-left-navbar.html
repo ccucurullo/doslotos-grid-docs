@@ -4,57 +4,52 @@
 <head>
  @@include('../../include/head.html', { "title": "Botones" })
 </head>
- <body id="grid-example" class="example" style="padding-top: 0;">
+<body id="grid-example" class="example" style="padding-top: 80px;">
 
- <div class="navbar nav-offcanvas">
-   <!--
-   navbar classes
-   .nav-default
-   .nav-horizontal
-   .nav-offcanvas
-   -->
-    <a href="#" class="brand">Brand</a>
-    <ul role="mainnav" id="mainnav" class="nav nav-left">
-      <li><a href="#">Inicio</a></li>
-      <li class="dropdown">
-        <a href="#">Servicios</a>
-        <ul>
-            <li><a href="#">Servicios I</a></li>
-            <li><a href="#">Servicios II</a></li>
-            <li><a href="#">Servicios III</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Trabajos</a></li>
-      <li><a href="#">Nosotros</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Contactenos</a></li>
-    </ul>
-    <button data-collapse data-target="#mainnav" class="toggle"><span class="icon"></span></button>
-  </div>
+<header class="demo-navbar">
+ <div class="container">
+   <div class="navbar nav-offcanvas">
+     <a href="#" class="brand">Brand</a>
+     <ul role="mainnav" id="mainnav" class="nav nav-left">
+       <li><a href="#">Inicio</a></li>
+       <li class="dropdown">
+         <a href="#">Servicios</a>
+         <ul>
+             <li><a href="#">Servicios I</a></li>
+             <li><a href="#">Servicios II</a></li>
+             <li><a href="#">Servicios III</a></li>
+         </ul>
+       </li>
+       <li><a href="#">Trabajos</a></li>
+       <li><a href="#">Nosotros</a></li>
+       <li><a href="#">Blog</a></li>
+       <li><a href="#">Contactenos</a></li>
+     </ul>
+     <button data-collapse data-target="#mainnav" class="toggle"><span class="icon"></span></button>
+   </div>
+ </div>
+</header>
 
-  <section  class="initial">
-    <div class="container">
-      <div class="row row-align-h-center">
-        <div class="col-md-8">
-          <h3><strong>dosLotos</strong>Grid</h3>
-          <h2>Off Canvas left Navbar</h2>
-          <p>Es un framework CSS basado en Flexbox que te permite crear estructuras con gran rápidez.</p>
-          <p><strong>dosLotos</strong>Grid esta testeado corss-browser y multiplataforma. Es compatible con todos los sistemas operativos y su grilla principal es totalmente adpatable para desarrollos de aplicaciones mobiles en React.js u otros lenguajes.</p>
-          <p><strong>dosLotos</strong>Grid esta testeado corss-browser y multiplataforma. Es compatible con todos los sistemas operativos y su grilla principal es totalmente adpatable para desarrollos de aplicaciones mobiles en React.js u otros lenguajes.</p>
-          <h3><strong>dosLotos</strong>Grid</h3>
-          <h2>Default Navbar</h2>
-          <p>Es un framework CSS basado en Flexbox que te permite crear estructuras con gran rápidez.</p>
-          <p><strong>dosLotos</strong>Grid esta testeado corss-browser y multiplataforma. Es compatible con todos los sistemas operativos y su grilla principal es totalmente adpatable para desarrollos de aplicaciones mobiles en React.js u otros lenguajes.</p>
-          <p><strong>dosLotos</strong>Grid esta testeado corss-browser y multiplataforma. Es compatible con todos los sistemas operativos y su grilla principal es totalmente adpatable para desarrollos de aplicaciones mobiles en React.js u otros lenguajes.</p>
-          <h3><strong>dosLotos</strong>Grid</h3>
-          <h2>Default Navbar</h2>
-          <p>Es un framework CSS basado en Flexbox que te permite crear estructuras con gran rápidez.</p>
-          <p><strong>dosLotos</strong>Grid esta testeado corss-browser y multiplataforma. Es compatible con todos los sistemas operativos y su grilla principal es totalmente adpatable para desarrollos de aplicaciones mobiles en React.js u otros lenguajes.</p>
-          <p><strong>dosLotos</strong>Grid esta testeado corss-browser y multiplataforma. Es compatible con todos los sistemas operativos y su grilla principal es totalmente adpatable para desarrollos de aplicaciones mobiles en React.js u otros lenguajes.</p>
-        </div>
+
+<section  class="initial">
+  <div class="container">
+    <div class="row row-align-h-center">
+      <div class="col-md-10">
+        <h2>Left Off canvas Navbar</h2>
+        <p>Es un framework CSS basado en Flexbox que te permite crear estructuras con gran rápidez.</p>
+<code><pre>
+&lt;div class="navbar nav-offcanvas"&gt;<br />
+  &lt;a href="#" class="brand"&gt;Brand&lt;/a&gt;<br />
+  &lt;ul role="navigation" id="navigation" class="nav nav-left"&gt;<br />
+    ...<br />
+  &lt;/ul&gt;<br />
+  &lt;button data-collapse data-target="#navigation" class="toggle"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/button&gt;<br />
+&lt;/div&gt;
+</pre></code>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 @@include('../../include/pre-footer.html')
 </div>
@@ -79,14 +74,14 @@
        }
        var targetEl = document.querySelector(triggerEl.getAttribute('data-target'));
        if (targetEl) {
-         triggerEl.classList.toggle('btn-active');
+         triggerEl.classList.toggle('toggle-active');
          targetEl.classList.toggle('active');
        }
      };
      document.addEventListener('click', collapseClickHandler, false);
    });
 
- // agrega la clase 'btn-active' al toggle btn
+ // agrega la clase 'toggle-active' al toggle btn
  // agrega la class 'active' al ul#mainnav
  </script>
 </body>
