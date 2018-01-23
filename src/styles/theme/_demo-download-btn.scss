@@ -5,50 +5,17 @@
 	top: 14px;
 	right: 15px;
 	@include border-radius(50%);
-	@include square(34px);
-	background-color: rgba(255, 255, 255, .4);
+	@include square(30px);
 	@include animation(0.15s ease-in-out);
-	.download.icon {
-		@include animation(0.15s ease-in-out);
-	  color: #fff;
-	  position: absolute;
-	  margin:19px 0 0 9px;
-	  width: 16px;
-	  height: 4px;
-	  border-radius: 1px;
-	  border: solid 2px currentColor;
-	  border-top: none;
-	}
+	background-color: #333;
 
-	.download.icon:before {
-	  content: '';
-	  position: absolute;
-	  left: 5px;
-	  top: -12px;
-	  width: 2px;
-	  height: 10px;
-	  background-color: currentColor;
-	}
-
-	.download.icon:after {
-	  content: '';
-	  position: absolute;
-	  left: 3px;
-	  top: -6px;
-	  width: 4px;
-	  height: 4px;
-	  border-top: solid 2px currentColor;
-	  border-right: solid 2px currentColor;
-	  -webkit-transform: rotate(135deg);
-	          transform: rotate(135deg);
-	}
 	&:hover,
 	&:active,
 	&:focus{
-		background-color: #fff;
 		@include main-deep(4);
-		.download.icon{
-			color: #000;
-		}
+	}
+	svg{
+		margin: 0;
+		fill: #fff;
 	}
 }
