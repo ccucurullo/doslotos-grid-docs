@@ -7,7 +7,14 @@
 // mansoty flexbox
 .masonry-layout{
   padding: 10px;
+  @media (max-width: 768px){
+    column-count: ($masonry-columns - 1);
+  }
+  @media (max-width: 480px){
+    column-count: ($masonry-columns - 2);
+  }
 }
+
 .item { /* Masonry bricks or child elements */
     background-color: #fff;
     display: inline-block;
@@ -28,32 +35,7 @@
     }
 }
 
-// CSS Layout Grid
-$grid-main-padding: 0 !default;
-$grid-column-space: $grid-main-padding !default;
 
-:root{
-  --gridBox-height: 33.33%; // cantidad de columnas de la grilla
-}
-@media (max-width: 992px){
-  :root{
-    --gridBox-height: 50%;
-  }
-}
-@media (max-width: 500px){
-  :root{
-    --gridBox-height: 100%;
-  }
-}
-
-.grid-layout {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(var(--gridBox-height), 1fr));
-    grid-gap: $grid-column-space;
-    grid-auto-rows: minmax(var(--gridBox-height), auto);
-    grid-auto-flow: dense;
-    padding: $grid-main-padding;
-}
 
 .grid-item {
     border: 3px solid #f1f1f1;
