@@ -124,29 +124,23 @@ body{
     display: inline-block;
     border: 1px solid $grid-border-color;
     margin: 10px 20px;
-		@include animation(0.5s ease-in-out);
+		font-size: 12px;
+		color: #555;
+		text-align: center;
+		padding-top: 20px;		
     &.deep-1{
     	@include main-deep(1);
-			@include zindex(1);
     }
     &.deep-2{
     	@include main-deep(2);
-			@include zindex(6);
     }
     &.deep-3{
     	@include main-deep(3);
-			@include zindex(10);
     }
     &.deep-4{
     	@include main-deep(4);
-			@include zindex(2);
     }
     &.deep-5{
     	@include main-deep(5);
-			@include zindex(5);
-    }
-
-    &:hover {
-				@include animation-transform(scale(1.5));
     }
 }
