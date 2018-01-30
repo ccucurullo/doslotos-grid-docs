@@ -4,6 +4,7 @@
 <head>
  @@include('../../include/head.html', { "title": "Botones" })
 </head>
+
  @@include('../../include/main-nav.html')
   <h1>Componentes</h1>
   <a href="https://github.com/ccucurullo/dsgrid" class="download-btn" target="_blank">
@@ -13,29 +14,30 @@
   </a>
 </header>
 
-<section class="initial">
-  <div class="container">
-    <div class="row">
-      <div class="col-xxs-12">
-        <h2>Navbar Default</h2>
-        <p>Por años use Bootstrap desde su primera versión hasta su ultimo release y realmente me parece un framework excelente. Con el correr del tiempo me fui dando cuenta que en mis desarrollos no solo utilizaba solo la grilla de bootstrap sino que a veces tener todo el css me traia algunos dolores de cabeza.</p>
-        <div class="navbar navbar-demo">
-          <a href="#" class="brand">Brand</a>
-          <ul role="navigation" id="navigation" class="nav">
-            <li><a href="#">Home</a></li>
-            <li class="dropdown">
-              <a href="#">Services</a>
-              <ul>
-                  <li><a href="#">Service I</a></li>
-                  <li><a href="#">Service II</a></li>
-                  <li><a href="#">Service III</a></li>
-              </ul>
-            </li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-          <button data-collapse data-target="#navigation" class="toggle"><span class="icon"></span></button>
-        </div>
+<main>
+  <section class="initial">
+    <div class="container">
+      <div class="row">
+        <div class="col-xxs-12">
+          <h2>Navbar Default</h2>
+          <p>Por años use Bootstrap desde su primera versión hasta su ultimo release y realmente me parece un framework excelente. Con el correr del tiempo me fui dando cuenta que en mis desarrollos no solo utilizaba solo la grilla de bootstrap sino que a veces tener todo el css me traia algunos dolores de cabeza.</p>
+          <div class="navbar navbar-demo">
+            <a href="#" class="brand">Brand</a>
+            <ul role="navigation" id="navigation" class="nav">
+              <li><a href="#">Home</a></li>
+              <li class="dropdown">
+                <a href="#">Services</a>
+                <ul>
+                    <li><a href="#">Service I</a></li>
+                    <li><a href="#">Service II</a></li>
+                    <li><a href="#">Service III</a></li>
+                </ul>
+              </li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <button data-collapse data-target="#navigation" class="toggle"><span class="icon"></span></button>
+          </div>
 
 <code><pre>
 &lt;div class="navbar"&gt;<br />
@@ -54,34 +56,34 @@
   &lt;button data-collapse data-target="#navigation" class="toggle"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/button&gt;<br />
 &lt;/div&gt;
 </pre></code>
-      </div> <!-- Main Column -->
-    </div> <!-- Main Row -->
-  </div> <!-- Main Container -->
-</section>
-<hr />
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-xxs-12">
-        <h2>Navbar Reverse</h2>
-        <p>Por años use Bootstrap desde su primera versión hasta su ultimo release y realmente me parece un framework excelente. Con el correr del tiempo me fui dando cuenta que en mis desarrollos no solo utilizaba solo la grilla de bootstrap sino que a veces tener todo el css me traia algunos dolores de cabeza.</p>
-        <div class="navbar navbar-demo navbar-reverse">
-          <a href="#" class="brand">Brand</a>
-          <ul role="navigation" id="navigation" class="nav">
-            <li><a href="#">Home</a></li>
-            <li class="dropdown">
-              <a href="#">Services</a>
-              <ul>
-                  <li><a href="#">Service I</a></li>
-                  <li><a href="#">Service II</a></li>
-                  <li><a href="#">Service III</a></li>
-              </ul>
-            </li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-          <button data-collapse data-target="#navigation" class="toggle"><span class="icon"></span></button>
-        </div>
+        </div> <!-- Main Column -->
+      </div> <!-- Main Row -->
+    </div> <!-- Main Container -->
+  </section>
+  <hr />
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-xxs-12">
+          <h2>Navbar Reverse</h2>
+          <p>Por años use Bootstrap desde su primera versión hasta su ultimo release y realmente me parece un framework excelente. Con el correr del tiempo me fui dando cuenta que en mis desarrollos no solo utilizaba solo la grilla de bootstrap sino que a veces tener todo el css me traia algunos dolores de cabeza.</p>
+          <div class="navbar navbar-demo navbar-reverse">
+            <a href="#" class="brand">Brand</a>
+            <ul role="navigation" id="navigation" class="nav">
+              <li><a href="#">Home</a></li>
+              <li class="dropdown">
+                <a href="#">Services</a>
+                <ul>
+                    <li><a href="#">Service I</a></li>
+                    <li><a href="#">Service II</a></li>
+                    <li><a href="#">Service III</a></li>
+                </ul>
+              </li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <button data-collapse data-target="#navigation" class="toggle"><span class="icon"></span></button>
+          </div>
 
 <code><pre>
 &lt;div class="navbar navbar-reverse"&gt;<br />
@@ -100,34 +102,34 @@
   &lt;button data-collapse data-target="#navigation" class="toggle"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/button&gt;<br />
 &lt;/div&gt;
 </pre></code>
-      </div> <!-- Main Column -->
-    </div> <!-- Main Row -->
-  </div> <!-- Main Container -->
-</section>
-<hr />
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-xxs-12">
-        <h2>Navbar Pills</h2>
-        <p>Por años use Bootstrap desde su primera versión hasta su ultimo release y realmente me parece un framework excelente. Con el correr del tiempo me fui dando cuenta que en mis desarrollos no solo utilizaba solo la grilla de bootstrap sino que a veces tener todo el css me traia algunos dolores de cabeza.</p>
-        <div class="navbar navbar-demo pills-nav">
-          <a href="#" class="brand">Brand</a>
-          <ul role="navigation" id="navigation" class="nav">
-            <li><a href="#">Home</a></li>
-            <li class="dropdown">
-              <a href="#">Services</a>
-              <ul>
-                  <li><a href="#">Service I</a></li>
-                  <li><a href="#">Service II</a></li>
-                  <li><a href="#">Service III</a></li>
-              </ul>
-            </li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-          <button data-collapse data-target="#navigation" class="toggle"><span class="icon"></span></button>
-        </div>
+        </div> <!-- Main Column -->
+      </div> <!-- Main Row -->
+    </div> <!-- Main Container -->
+  </section>
+  <hr />
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-xxs-12">
+          <h2>Navbar Pills</h2>
+          <p>Por años use Bootstrap desde su primera versión hasta su ultimo release y realmente me parece un framework excelente. Con el correr del tiempo me fui dando cuenta que en mis desarrollos no solo utilizaba solo la grilla de bootstrap sino que a veces tener todo el css me traia algunos dolores de cabeza.</p>
+          <div class="navbar navbar-demo pills-nav">
+            <a href="#" class="brand">Brand</a>
+            <ul role="navigation" id="navigation" class="nav">
+              <li><a href="#">Home</a></li>
+              <li class="dropdown">
+                <a href="#">Services</a>
+                <ul>
+                    <li><a href="#">Service I</a></li>
+                    <li><a href="#">Service II</a></li>
+                    <li><a href="#">Service III</a></li>
+                </ul>
+              </li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <button data-collapse data-target="#navigation" class="toggle"><span class="icon"></span></button>
+          </div>
 
 <code><pre>
 &lt;div class="navbar pills-nav"&gt;<br />
@@ -146,30 +148,40 @@
   &lt;button data-collapse data-target="#navigation" class="toggle"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/button&gt;<br />
 &lt;/div&gt;
 </pre></code>
-      </div> <!-- Main Column -->
-    </div> <!-- Main Row -->
-  </div> <!-- Main Container -->
-</section>
-<hr />
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-xxs-12">
-        <h2>Navbar opciones y ejemplos</h2>
-        <p>Por años use Bootstrap desde su primera versión hasta su ultimo release y realmente me parece un framework excelente. Con el correr del tiempo me fui dando cuenta que en mis desarrollos no solo utilizaba solo la grilla de bootstrap sino que a veces tener todo el css me traia algunos dolores de cabeza.</p>
-        <p><a href="default-navbar.html" target="_blank" class="btn btn-demo">default navbar</a></p>
-        <p><a href="horizontal-navbar.html" target="_blank" class="btn btn-demo">horizontal navbar</a></p>
-        <p><a href="offcanvas-left-navbar.html" target="_blank" class="btn btn-demo">offcanvas left navbar</a></p>
-        <p><a href="offcanvas-right-navbar.html" target="_blank" class="btn btn-demo">offcanvas right navbar</a></p>
-        <p><a href="fullscreen-navbar.html" target="_blank" class="btn btn-demo">fullscreen navbar</a></p>
-      </div> <!-- Main Column -->
-    </div> <!-- Main Row -->
-  </div> <!-- Main Container -->
-</section>
-
-
-
-
+        </div> <!-- Main Column -->
+      </div> <!-- Main Row -->
+    </div> <!-- Main Container -->
+  </section>
+  <hr />
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-xxs-12">
+          <h2>Navbar opciones y ejemplos</h2>
+          <h3>Ejemplo Navbar Default</h3>
+          <p>Por años use Bootstrap desde su primera versión hasta su ultimo release y realmente me parece un framework excelente. Con el correr del tiempo me fui dando cuenta que en mis desarrollos no solo utilizaba solo la grilla de bootstrap sino que a veces tener todo el css me traia algunos dolores de cabeza.</p>
+          <p><a href="default-navbar.html" target="_blank" class="btn btn-demo">Ver Ejemplo</a></p>
+          <hr />
+          <h3>Ejemplo Navbar Horizontal</h3>
+          <p>Por años use Bootstrap desde su primera versión hasta su ultimo release y realmente me parece un framework excelente. Con el correr del tiempo me fui dando cuenta que en mis desarrollos no solo utilizaba solo la grilla de bootstrap sino que a veces tener todo el css me traia algunos dolores de cabeza.</p>
+          <p><a href="horizontal-navbar.html" target="_blank" class="btn btn-demo">Ver Ejemplor</a></p>
+          <hr />
+          <h3>Ejemplo Navbar Offcanvas Left</h3>
+          <p>Por años use Bootstrap desde su primera versión hasta su ultimo release y realmente me parece un framework excelente. Con el correr del tiempo me fui dando cuenta que en mis desarrollos no solo utilizaba solo la grilla de bootstrap sino que a veces tener todo el css me traia algunos dolores de cabeza.</p>
+          <p><a href="offcanvas-left-navbar.html" target="_blank" class="btn btn-demo">Ver Ejemplo</a></p>
+          <hr />
+          <h3>Ejemplo Navbar Offcanvas Right</h3>
+          <p>Por años use Bootstrap desde su primera versión hasta su ultimo release y realmente me parece un framework excelente. Con el correr del tiempo me fui dando cuenta que en mis desarrollos no solo utilizaba solo la grilla de bootstrap sino que a veces tener todo el css me traia algunos dolores de cabeza.</p>
+          <p><a href="offcanvas-right-navbar.html" target="_blank" class="btn btn-demo">Ver Ejemplo</a></p>
+          <hr />
+          <h3>Ejemplo Navbar Fullscreen</h3>
+          <p>Por años use Bootstrap desde su primera versión hasta su ultimo release y realmente me parece un framework excelente. Con el correr del tiempo me fui dando cuenta que en mis desarrollos no solo utilizaba solo la grilla de bootstrap sino que a veces tener todo el css me traia algunos dolores de cabeza.</p>
+          <p><a href="fullscreen-navbar.html" target="_blank" class="btn btn-demo">Ver Ejemplo</a></p>
+        </div> <!-- Main Column -->
+      </div> <!-- Main Row -->
+    </div> <!-- Main Container -->
+  </section>
+</main>
 
 @@include('../../include/pre-footer.html')
 </div>

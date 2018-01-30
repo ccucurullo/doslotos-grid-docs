@@ -4,6 +4,7 @@
 <head>
  @@include('../include/head.html', { "title": "Botones" })
 </head>
+
  @@include('../include/main-nav.html')
   <h1>Utilidades</h1>
   <a href="https://github.com/ccucurullo/dsgrid" class="download-btn" target="_blank">
@@ -13,38 +14,38 @@
   </a>
 </header>
 
-<section class="initial">
-  <div class="container">
-    <div class="row">
-      <div class="col-xxs-12">
-        <h2>Responsive Images</h2>
-        <p>Las imagenes responsive pueden ocupar el 100% de su contenedor o simpmenente el 100% de su ancho por defecto. A continuación se detalla cada clase</p>
-        <ul>
-            <li><strong>img-responsive</strong> -- Mantiene su ancho por defecto y en resoluciones menores se adapata proporcionalmente.</li>
-            <li><strong>img-full-responsive</strong> -- No mantiene su ancho por defecto y siempre se adapta proporcionalmente a su contenedor.</li>
-        </ul>
-        <div class="example-holder">
-          <div class="row">
-            <div class="col-xs-6">
-                <h3>Responsive Image</h3>
-                <img src="https://www.patriciaeizaguirre.com/content/img/gal/1939/paisaje-125_2017022414494458b0480806ce9.thumb.jpg" class="img-responsive" /><br />
-            </div>
-            <div class="col-xs-6">
-                <h3>Full Responsive Image</h3>
-                <img src="https://www.patriciaeizaguirre.com/content/img/gal/1939/paisaje-125_2017022414494458b0480806ce9.thumb.jpg" class="img-full-responsive" /><br />
+<main>
+  <section class="initial">
+    <div class="container">
+      <div class="row">
+        <div class="col-xxs-12">
+          <h2>Responsive Images</h2>
+          <p>Las imagenes responsive pueden ocupar el 100% de su contenedor o simpmenente el 100% de su ancho por defecto. A continuación se detalla cada clase</p>
+          <ul>
+              <li><strong>img-responsive</strong> -- Mantiene su ancho por defecto y en resoluciones menores se adapata proporcionalmente.</li>
+              <li><strong>img-full-responsive</strong> -- No mantiene su ancho por defecto y siempre se adapta proporcionalmente a su contenedor.</li>
+          </ul>
+          <div class="example-holder">
+            <div class="row">
+              <div class="col-xs-6">
+                  <h3>Responsive Image</h3>
+                  <img src="https://www.patriciaeizaguirre.com/content/img/gal/1939/paisaje-125_2017022414494458b0480806ce9.thumb.jpg" class="img-responsive" /><br />
+              </div>
+              <div class="col-xs-6">
+                  <h3>Full Responsive Image</h3>
+                  <img src="https://www.patriciaeizaguirre.com/content/img/gal/1939/paisaje-125_2017022414494458b0480806ce9.thumb.jpg" class="img-full-responsive" /><br />
+              </div>
             </div>
           </div>
-        </div>
 <code><pre>
 &lt;img src="..." alt="" class="img-responsive" /&gt;<br />
 &lt;img src="..." alt="" class="img-full-responsive" /&gt;
 </pre></code>
-      </div> <!-- Main Column -->
-    </div> <!-- Main Row -->
-  </div> <!-- Main Container -->
-</section>
-
-
+        </div> <!-- Main Column -->
+      </div> <!-- Main Row -->
+    </div> <!-- Main Container -->
+  </section>
+</main>
 
 @@include('../include/pre-footer.html')
 </div>

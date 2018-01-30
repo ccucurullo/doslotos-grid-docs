@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 <head>
  @@include('../include/head.html', { "title": "Botones" })
 </head>
+
  @@include('../include/main-nav.html')
   <h1>Base</h1>
   <a href="https://github.com/ccucurullo/dsgrid" class="download-btn" target="_blank">
@@ -13,33 +13,33 @@
   </a>
 </header>
 
-<section class="initial">
-  <div class="container">
-    <div class="row">
-      <div class="col-xxs-12">
-        <h2>Breakpoints</h2>
-        <p>Los Breakpoint o quiebres responsive estan seteados por defecto en el archivo <em>_variables.scss</em> pueden editarse las medidas a gusto y/o agregar las necesarias.</p>
-        <ul>
-            <li><strong>xxs</strong> -- Siempre 'flotan'</li>
-            <li><strong>xs</strong> -- Breakpoint/Quiebre 480px</li>
-            <li><strong>sm</strong> -- Breakpoint/Quiebre 768px</li>
-            <li><strong>md</strong> -- Breakpoint/Quiebre 992px</li>
-            <li><strong>lg</strong> -- Breakpoint/Quiebre 1200px</li>
-        </ul>
-        <p>Las variables utilizadas para cada breakpoint o quiebre son las siguientes:</p>
-        <ul>
-            <li><strong>$device-xs</strong>	480px</li>
-            <li><strong>$device-sm</strong>	768px</li>
-            <li><strong>$device-md</strong>	992px</li>
-            <li><strong>$device-lg</strong>	1200px</li>
-            <li><strong>$navbar-collapse</strong> $device-sm (768px)</li>
-        </ul>
-      </div> <!-- Main Column -->
-    </div> <!-- Main Row -->
-  </div> <!-- Main Container -->
-</section>
-
-
+<main>
+  <section class="initial">
+    <div class="container">
+      <div class="row">
+        <div class="col-xxs-12">
+          <h2>Breakpoints</h2>
+          <p>Los Breakpoint o quiebres responsive estan seteados por defecto en el archivo <em>_variables.scss</em> pueden editarse las medidas a gusto y/o agregar las necesarias.</p>
+          <ul>
+              <li><strong>xxs</strong> -- Siempre 'flotan'</li>
+              <li><strong>xs</strong> -- Breakpoint/Quiebre 480px</li>
+              <li><strong>sm</strong> -- Breakpoint/Quiebre 768px</li>
+              <li><strong>md</strong> -- Breakpoint/Quiebre 992px</li>
+              <li><strong>lg</strong> -- Breakpoint/Quiebre 1200px</li>
+          </ul>
+          <p>Las variables utilizadas para cada breakpoint o quiebre son las siguientes:</p>
+          <ul>
+              <li><strong>$device-xs</strong>	480px</li>
+              <li><strong>$device-sm</strong>	768px</li>
+              <li><strong>$device-md</strong>	992px</li>
+              <li><strong>$device-lg</strong>	1200px</li>
+              <li><strong>$navbar-collapse</strong> $device-sm (768px)</li>
+          </ul>
+        </div> <!-- Main Column -->
+      </div> <!-- Main Row -->
+    </div> <!-- Main Container -->
+  </section>
+</main>
 
 @@include('../include/pre-footer.html')
 </div>
