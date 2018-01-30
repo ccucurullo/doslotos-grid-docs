@@ -1,6 +1,12 @@
 // Example Body Style
 //---------------------------------------------------------------------------------------
 body{
+	*{
+		&:focus,
+		&:active{
+			outline: none;
+		}
+	}
 	&.example{
 		padding-top: 60px;
 		font-family: 'Roboto', sans-serif;
@@ -162,9 +168,7 @@ body{
 	background-color: #6e45e2;
 	color: #fff;
 	font-size: 14px;
-	&:hover,
-	&:active,
-	&:focus{
+	&:hover{
 		@include box-shadow(2px 3px 12px rgba(0,0,0,0.5));
 		background-color: darken(#6e45e2, 15%);
 	}
