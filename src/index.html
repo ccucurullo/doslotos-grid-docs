@@ -5,8 +5,8 @@
   @@include('include/head.html', { "title": "Home" })
 </head>
 
-<body id="grid-home">
-<div class="hero hero-center hero-full-height">
+<body id="grid-home" class="example">
+<div class="hero hero-center hero-height">
   <div class="tagline">
       <h1><strong>Tu</strong> diseño<br />Nuestra <strong>Grilla</strong></h1>
       <h2><strong>dosLotos</strong>Grid es un framework CSS basado en Flexbox.</h2>
@@ -15,15 +15,48 @@
   </div>
 </div>
 
-<section>
-    <div class="container-fluid">
-        <div class="row">
+<section class="white-section">
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-4 text-center">
+          <h3>Sin Javascript</h3>
+          <p>Es un framework CSS basado en Flexbox que te permite crear estructuras con gran rápidez.</p>
+        </div>
+        <div class="col-sm-4 text-center">
+          <h3>SASS Base</h3>
+          <p>Es un framework CSS basado en Flexbox que te permite crear estructuras con gran rápidez.</p>
+        </div>
+        <div class="col-sm-4 text-center">
+          <h3>Compatible</h3>
+          <p>Es un framework CSS basado en Flexbox que te permite crear estructuras con gran rápidez.</p>
         </div>
     </div>
+  </div>
 </section>
 
-
-  @@include('include/footer.html')
+<section class="initial">
+    <div class="container">
+      <div class="row">
+          <div class="col-sm-12">
+            <h2>Qué es <strong>dosLotos</strong>Grid?</h2>
+            <p>Es un framework CSS basado en Flexbox que te permite crear estructuras con gran rápidez.</p>
+            <p><strong>dosLotos</strong>Grid esta testeado corss-browser y multiplataforma. Es compatible con todos los sistemas operativos y su grilla principal es totalmente adpatable para desarrollos de aplicaciones mobiles en React.js u otros lenguajes.</p>
+            <hr />
+            <h2>Por qué cree <strong>dosLotos</strong>Grid?</h2>
+            <p>Por años use Bootstrap desde su primera versión hasta su ultimo release y realmente me parece un framework excelente. Con el correr del tiempo me fui dando cuenta que en mis desarrollos no solo utilizaba solo la grilla de bootstrap sino que a veces tener todo el css me traia algunos dolores de cabeza.</p>
+            <p>Fue entoncés cuando decidí crear <strong>dosLotos</strong>Grid. Una estructura solida 100% flexible con un conjunto de utilidades básicas que son el punto de partida de tu desarrollo. De ahí en adelante las deciciones de diseño, los componentes y el JS a utilizar corren por tu cuenta.</p>
+            <hr />
+            <h2>Quiénes Pueden utilizarlo?</h2>
+            <p>Al igual que todos los Frameworks en CSS cualquiera puede utilizar <strong>dosLotos</strong>Grid siempre y cuando posean un grado básico de HTML/CSS.</p>
+            <p class="text-center">
+                <a href="/grid.html" class="btn btn-demo">Ir a la documentación</a>
+            </p>
+            @@include('include/pre-footer.html')
+          </div>
+      </div>
+    </div>
+  </section>
+   @@include('include/footer.html')
 </body>
 
 </html>
