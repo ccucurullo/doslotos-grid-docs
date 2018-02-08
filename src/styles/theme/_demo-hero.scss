@@ -26,6 +26,9 @@ $hero-main-height:      450px !default;
 //__ Hero Controled Height
 .hero-height{
   min-height: $hero-main-height;
+  @media (max-width: $device-xs){
+    min-height: 380px;
+  }
 }
 
 

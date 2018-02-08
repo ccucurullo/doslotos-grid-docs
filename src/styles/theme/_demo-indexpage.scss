@@ -19,7 +19,7 @@ body#grid-home{
       //text-transform: uppercase;
       margin-bottom: 10px;
       @media (max-width: $device-xs){
-        font-size: 28px;
+        font-size: 38px;
       }
       strong{
         font-weight: 900;
@@ -62,5 +62,11 @@ body#grid-home{
 				background-color: #F31A3E;
 			}
 		}
+	}
+
+	// main icons
+	span.icon{
+		font-size: 80px;
+		color: #ccc;
 	}
 }

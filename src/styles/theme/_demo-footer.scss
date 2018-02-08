@@ -8,11 +8,6 @@
 	color: #999;
 	span{
 		color: #222;
-		&.autor{
-			@media (max-width: 410px){
-				display: none;
-			}
-		}
 	}
 	p{
 		@media (min-width: 410px){
@@ -26,6 +21,21 @@
 		}
 		&:hover{
 			text-decoration: underline;
+		}
+	}
+
+	// social
+	.social{
+		li{
+			display: inline-block;
+			font-size: 24px;
+			margin-left: 4px;
+			a{
+				color: #ccc;
+				&:hover{
+					color: #666;
+				}
+			}
 		}
 	}
 }
