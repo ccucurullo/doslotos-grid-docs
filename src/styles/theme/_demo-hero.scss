@@ -64,7 +64,7 @@ $hero-main-height:      450px !default;
 
 // Rounded Buttons
 .btn-rounded{
-  @include border-radius(25px);
+  @include border-radius(3px);
 }
 
 // Shadow Buttons

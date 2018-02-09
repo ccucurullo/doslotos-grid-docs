@@ -26,6 +26,8 @@
 
 	// social
 	.social{
+		margin:0;
+		padding: 0;
 		li{
 			display: inline-block;
 			font-size: 24px;
@@ -36,6 +38,11 @@
 					color: #666;
 				}
 			}
+		}
+	}
+	.xs-text-center{
+		@media (max-width: $device-xs){
+			text-align: center;
 		}
 	}
 }

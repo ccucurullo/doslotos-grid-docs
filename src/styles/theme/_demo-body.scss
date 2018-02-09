@@ -172,11 +172,11 @@ body{
 
 // Demo Btn's
 .btn-demo{
-	@include border-radius(25px);
+	@include border-radius(3px);
 	@include box-shadow(1px 2px 6px rgba(0,0,0,0.3));
 	background-color: #6e45e2;
 	color: #fff;
-	font-size: 14px;
+	font-size: 16px;
 	&:hover{
 		@include box-shadow(2px 3px 12px rgba(0,0,0,0.5));
 		background-color: darken(#6e45e2, 15%);
