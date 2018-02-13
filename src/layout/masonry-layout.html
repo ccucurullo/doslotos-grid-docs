@@ -2,7 +2,7 @@
 <html>
 
 <head>
- @@include('../include/head.html', { "title": "Botones" })
+ @@include('../include/head.html', { "title": "Masonry Layout" })
 </head>
 
  @@include('../include/main-nav.html', { "item": "masonry-layout" })
@@ -20,7 +20,12 @@
       <div class="row">
         <div class="col-xxs-12">
           <h2>Masonry Layout</h2>
-          <p>Crea una grilla perfecta sin importarle la cantidad de elementos que contenga. Podemos setearle una cantidad de elementos por defecto y luego variar esta cantidad dependiendo de la resolución en la que se muestran.</p>
+          <p>Crea una grilla perfecta sin importarle la cantidad de elementos que contenga. Coloca los elementos en una posición óptima en función del espacio vertical disponible.</p>
+          <h3>Cómo setear mi grilla?</h3>
+          <p>En el archivo <strong>_variables.scss</strong> vas a encontrar el seteo inicial de este layout. Donde declaramos la cantidad inicial de columnas <em>'$masonry-columns'</em> y el espaciado entre ellas <em>'$masonry-gap'</em>. </p>
+          <p>Luego simplemente desde tu CSS seteas el punto de quiebre (Breakpoint) y la cantidad de columnas que quieras utilizar y el espaciado entre ellas.</p>
+          <hr />
+          <h3>Ejemplo Layout</h3>
           <div class="example-holder">
             <div class="masonry-layout">
                <div class="item"><h3>1. Titulo de la Caja</h3><img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/foodnavigator.com/article/2018/01/05/making-the-cut-is-fat-more-important-in-sweet-or-savoury-foods/7710248-1-eng-GB/Making-the-cut-Is-fat-more-important-in-sweet-or-savoury-foods_wrbm_medium.jpg" class="img-responsive" /><p>The second concept is to give our masonry container (.masonry) a fixed height and then set the flex-direction to column. This technique is not so handy, as you will have to tweak up the height of the container everytime you add new items to the masonry.</p></div>

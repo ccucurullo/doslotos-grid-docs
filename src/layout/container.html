@@ -2,7 +2,7 @@
 <html>
 
 <head>
- @@include('../include/head.html', { "title": "Botones" })
+ @@include('../include/head.html', { "title": "Containers" })
 </head>
 
  @@include('../include/main-nav.html', { "item": "container" })
@@ -18,6 +18,7 @@
   <section class="initial">
     <div class="container">
         <h2>Fixed Container</h2>
+        <p>Centrado y de ancho fijo. Varia su ancho según el viewport.</p>
     </div>
     <div class="container" style="border:1px solid #333;background-color:#eee;height:250px;">&nbsp;</div>
     <div class="container">
@@ -32,6 +33,7 @@
   <section class="initial">
     <div class="container">
         <h2>Fluid Container</h2>
+        <p>Su ancho varia segun el viewport y siempre se extiende al 100% de ancho.</p>
     </div>
     <div class="container-fluid" style="border:1px solid #333;background-color:#eee;height:250px;">&nbsp;</div>
     <div class="container-fluid">

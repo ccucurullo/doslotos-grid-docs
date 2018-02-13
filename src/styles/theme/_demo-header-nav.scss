@@ -140,6 +140,11 @@ aside.navigation{
 					}
 				}
 			}
+			// active nav item
+			&.active > a{
+				color: #6e45e2;
+				font-weight: 600;
+			}
 		}
 	}
 
@@ -159,6 +164,9 @@ aside.navigation{
 	.dropdown.open ul{
 		position: relative !important;
 		background-color: transparent !important;
+		li.active > a{
+			background-color: #f9f9f9;
+		}
 	}
 }
 
