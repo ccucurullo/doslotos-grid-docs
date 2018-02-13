@@ -110,6 +110,14 @@ body{
 	}
 }
 
+a.content-link{
+	color: #6e45e2;
+	text-decoration: none;
+	&:hover{
+		color: lighten(#6e45e2, 15%);
+		text-decoration: underline;
+	}
+}
 
 // stiky footer structure
 .page{
