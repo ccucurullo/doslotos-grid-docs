@@ -39,6 +39,35 @@
   &lt;button data-collapse data-target="#navigation" class="toggle"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/button&gt;<br />
 &lt;/div&gt;
 </pre></code>
+        <hr />
+        <h3>Ejemplo JQuery</h3>
+        <p>Este ejemplo utiliza JQuery. si lo queres utilizar tal cual copia y pega el siguiente codigo</p>
+<code><pre>
+  jQuery(document).ready(function($) {<br />
+    var getTriggerElement = function(el) {<br />
+      var isCollapse = el.getAttribute('data-collapse');<br />
+      if (isCollapse !== null) {<br />
+        return el;<br />
+      } else {<br />
+        var isParentCollapse = el.parentNode.getAttribute('data-collapse');<br />
+        return (isParentCollapse !== null) ? el.parentNode : undefined;<br />
+      }<br />
+    };<br />
+    var collapseClickHandler = function(event) {<br />
+      var triggerEl = getTriggerElement(event.target);<br />
+      if (triggerEl === undefined) {<br />
+        event.preventDefault();<br />
+        return false;<br />
+      }<br />
+      var targetEl = document.querySelector(triggerEl.getAttribute('data-target'));<br />
+      if (targetEl) {<br />
+        triggerEl.classList.toggle('toggle-active');<br />
+        targetEl.classList.toggle('active');<br />
+      }<br />
+    };<br />
+    document.addEventListener('click', collapseClickHandler, false);<br />
+  });
+</pre></code>
       </div>
     </div>
   </div>
