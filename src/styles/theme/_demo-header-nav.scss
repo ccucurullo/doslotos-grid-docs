@@ -129,6 +129,12 @@ aside.navigation{
 				&:focus{
 					outline: none;
 				}
+				span{
+					font-size: 12px;
+					display: inline-block;
+					margin-left: 4px;
+					font-weight: 300;
+				}
 			}
 			ul{
 				margin:0 !important;
