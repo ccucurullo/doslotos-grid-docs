@@ -25,6 +25,7 @@ var gulp = require('gulp'),
   clean = require('del'),
   flatten = require('gulp-flatten'),
   CacheBuster = require('gulp-cachebust'),
+  cdnify = require('gulp-cdnify'),
   browserSync = require('browser-sync').create();
 
 // CacheBuster
@@ -246,7 +247,32 @@ gulp.task('html:build', function() {
     .pipe(gulp.dest('dist'));
 });
 
+// cdnify
+gulp.task('cdnify:build', function() {
+		return gulp
+			.src(['dist/**/*.{css,html}'])
+      .pipe(cdnify({
+        rewriter: function(url, process) {
+          if (url.indexOf('data:') === 0 || url.indexOf('//') != -1 || url.indexOf('mailto') != -1 || url.indexOf('tel:') != -1 || url == '#') {
+            return url;
+          } else {
+            if (url.charAt(0) === '/') {
+              url = url.substr(1);
+            }
+            return '/doslotos-grid/' + url;
+          }
+        },
+        html: {
+          'a[href]': 'href',
+          'link[rel=manifest]': 'href',
+          'link[rel=icon]': 'href',
+          'link[rel=apple-touch-icon]': 'href'
+        }
+      }))
+			.pipe(gulp.dest('dist'));
+});
+
 // Build
 gulp.task('build', function () {
-	runSequence('clean', 'images:build', 'styles:build', ['fonts:build', 'copy:htaccess', 'copy:manifest:build', 'html:build',]);
+	runSequence('clean', 'images:build', 'styles:build', ['fonts:build', 'copy:htaccess', 'copy:manifest:build', 'html:build',], 'cdnify:build');
 });
