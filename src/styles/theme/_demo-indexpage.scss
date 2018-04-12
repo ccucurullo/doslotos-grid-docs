@@ -2,6 +2,7 @@
 //---------------------------------------------------------------------------------------
 body#grid-home{
 	font-family: 'Roboto', sans-serif;
+	padding-top: 0;
 	.hero{
 		background-image: linear-gradient(-20deg, #88d3ce 0%, #6e45e2 100%);
 		h1, h2{
@@ -14,10 +15,11 @@ body#grid-home{
     h1{
       font-weight: 300;
       font-size: 56px;
-      text-transform: uppercase;
-      margin-bottom: 18px;
+			line-height: normal;
+      //text-transform: uppercase;
+      margin-bottom: 10px;
       @media (max-width: $device-xs){
-        font-size: 28px;
+        font-size: 38px;
       }
       strong{
         font-weight: 900;
@@ -51,14 +53,20 @@ body#grid-home{
 		}
 		.btn-download{
 			@include box-shadow(1px 2px 6px rgba(0,0,0,0.3));
-			background-color: $brand-secondary;
-			border-color: $brand-secondary;
+			background-color: #F31A3E;
+			border-color: #F31A3E;
 			&:hover,
 			&:active,
 			&:focus{
 				@include box-shadow(2px 3px 12px rgba(0,0,0,0.5));
-				background-color: $brand-secondary;
+				background-color: #F31A3E;
 			}
 		}
+	}
+
+	// main icons
+	span.icon{
+		font-size: 80px;
+		color: #ccc;
 	}
 }

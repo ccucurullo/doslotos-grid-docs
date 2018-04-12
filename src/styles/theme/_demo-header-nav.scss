@@ -9,7 +9,7 @@ header{
 	top:0;
 	left:240px;
 	right:0;
-	background-color: $brand-primary;
+	background-color: #6e45e2;
 	z-index: 999;
 	padding:16px 15px;
 	@media (max-width: 1280px){
@@ -129,6 +129,12 @@ aside.navigation{
 				&:focus{
 					outline: none;
 				}
+				span{
+					font-size: 12px;
+					display: inline-block;
+					margin-left: 4px;
+					font-weight: 300;
+				}
 			}
 			ul{
 				margin:0 !important;
@@ -140,21 +146,33 @@ aside.navigation{
 					}
 				}
 			}
+			// active nav item
+			&.active > a{
+				color: #6e45e2;
+				font-weight: 600;
+			}
 		}
 	}
 
+	.dropdown > a:after{
+		width: 0;
+		height: 6px;
+		position:absolute;
+		right: 24px;
+		top: 18px;
+
+	}
+	// arrow for open dropdown
+	.dropdown.open > a:after{
+		top: 12px;
+	}
 	// dropdown style for demo
 	.dropdown.open ul{
 		position: relative !important;
 		background-color: transparent !important;
-	}
-	.dropdown > a:after{
-		width: 6px;
-		height: 6px;
-		position:absolute;
-		right: 24px;
-		top: 14px;
-
+		li.active > a{
+			background-color: #f9f9f9;
+		}
 	}
 }
 
@@ -173,5 +191,33 @@ aside.navigation{
 	&.overlay-active{
 		opacity: 1;
 		visibility: visible;
+	}
+}
+
+
+// navbar examples for docs
+.demo-navbar{
+	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+	background-color: #6e45e2;
+	left:0;
+	padding:0;
+	a{
+		color: #fff;
+	}
+	.navbar > .nav {
+		@media (max-width: $navbar-collapse) {
+			background-color: darken(#6e45e2, 15%);
+		}
+	}
+	// bar icon
+	.navbar > .toggle > .icon {
+		&,
+		&:before,
+		&:after {
+			background-color: #fff;
+		}
+	}
+	.navbar > .toggle.toggle-active > .icon {
+		background-color: transparent;
 	}
 }

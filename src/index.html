@@ -2,28 +2,70 @@
 <html>
 
 <head>
-  @@include('include/head.html', { "title": "Home" })
+  @@include('include/head.html', { "title": "Flexbox Grid" })
 </head>
 
-<body id="grid-home">
-<div class="hero hero-center hero-full-height">
+<body id="grid-home" class="example">
+<div class="hero hero-center hero-height">
   <div class="tagline">
-      <h1><strong>Tu</strong> diseño<br />Nuestra <strong>Grilla</strong></h1>
-      <h2><strong>dosLotos</strong>Grid es un framework CSS basado en Flexbox.</h2>
-      <a href="https://github.com/ccucurullo/dsgrid" class="btn btn-outline btn-rounded btn-download" target="_blank">Github</a>
+      <h1><strong>dosLotos</strong> Grid</h1>
+      <h2>Un framework CSS basado en Flexbox.</h2>
+      <a href="https://github.com/ccucurullo/dsgrid" class="btn btn-outline btn-rounded btn-download" rel="noopener noreferrer" target="_blank">Descargar</a>
       <a href="/grid.html" class="btn btn-outline btn-rounded btn-white">Ir a la documentación</a>
   </div>
 </div>
 
-<section>
-    <div class="container-fluid">
-        <div class="row">
+<section class="white-section">
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-4 text-center">
+          <span class="icon"><i class="fab fa-js-square"></i></span>
+          <h3>Sin Javascript</h3>
+          <p><strong>dosLotos</strong> no incluye archivos Javascript dandote la posibilidad y la flexibilidad de utilizar el framework con el que te sientas más cómodo.</p>
+        </div>
+        <div class="col-sm-4 text-center">
+          <span class="icon"><i class="fab fa-sass"></i></span>
+          <h3>SASS Base</h3>
+          <p>Incluye un grupo de archivos SASS que son la base de tu proyecto. robustos y 100% flexibles. El UI queda por tu cuenta.</p>
+        </div>
+        <div class="col-sm-4 text-center">
+          <span class="icon"><i class="fas fa-check"></i></span>
+          <h3>Compatible</h3>
+          <p>Testeado cross Browser y multiplataforma. <strong>dosLotos</strong>Grid es 100% compatible. Utiliza tu propio CSS/SASS/JS para crear tu proyecto</p>
         </div>
     </div>
+    <div class="row">
+        <div class="col-xxs-12">
+          <p class="text-center"><a href="/grid.html" class="btn btn-demo">Ver archivos incluidos</a></p>
+        </div>
+    </div>
+  </div>
 </section>
 
-
-  @@include('include/footer.html')
+<section class="initial">
+    <div class="container">
+      <div class="row">
+          <div class="col-sm-12">
+            <h2>Qué es <strong>dosLotos</strong>Grid?</h2>
+            <p>Es un framework CSS basado en Flexbox que te permite crear estructuras con gran rápidez.</p>
+            <p><strong>dosLotos</strong>Grid esta testeado corss-browser y multiplataforma. Es compatible con todos los sistemas operativos y su grilla principal es totalmente adpatable para desarrollos de aplicaciones mobiles en React.js u otros lenguajes.</p>
+            <hr />
+            <h2>Por qué cree <strong>dosLotos</strong>Grid?</h2>
+            <p>Por años use Bootstrap desde su primera versión hasta su ultimo release y realmente me parece un framework excelente.
+              Con el correr del tiempo me fui dando cuenta que en mis desarrollos solo utilizaba su grilla y no todos sus componentes y CSS. Fue entoncés cuando tomé la decisión de crear mi propia grilla en flexbox con el potencial que esto implica y hacer un 'merge' con la grilla y las nomenclaturas de Bootstrap.</p>
+            <p>Fue así como nació <strong>dosLotos</strong>Grid. Una estructura solida 100% flexible con un conjunto de utilidades básicas que son el punto de partida de tu desarrollo. De ahí en adelante las decisiones de diseño, los componentes y el JS a utilizar corren por tu cuenta.</p>
+            <hr />
+            <h2>Quiénes Pueden utilizarlo?</h2>
+            <p>Al igual que todos los Frameworks en CSS cualquiera puede utilizar <strong>dosLotos</strong>Grid siempre y cuando posean un grado básico de HTML/CSS.</p>
+            <p class="text-center">
+                <a href="/grid.html" class="btn btn-demo">Ir a la documentación</a>
+            </p>
+            @@include('include/pre-footer.html')
+          </div>
+      </div>
+    </div>
+  </section>
+   @@include('include/footer.html')
 </body>
 
 </html>

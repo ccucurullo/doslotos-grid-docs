@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ @@include('../../include/head.html', { "title": "OffCanvas Navbar Left" })
+</head>
+<body id="grid-example" class="example" style="padding-top: 80px;">
+
+<header class="demo-navbar">
+ <div class="container">
+   <div class="navbar nav-offcanvas">
+     <a href="#" class="brand">Brand</a>
+     <ul role="mainnav" id="mainnav" class="nav nav-left">
+       <li><a href="#">Inicio</a></li>
+       <li class="dropdown">
+         <a href="#">Servicios</a>
+         <ul>
+             <li><a href="#">Servicios I</a></li>
+             <li><a href="#">Servicios II</a></li>
+             <li><a href="#">Servicios III</a></li>
+         </ul>
+       </li>
+       <li><a href="#">Trabajos</a></li>
+       <li><a href="#">Nosotros</a></li>
+       <li><a href="#">Blog</a></li>
+       <li><a href="#">Contactenos</a></li>
+     </ul>
+     <button data-collapse data-target="#mainnav" class="toggle"><span class="icon"></span></button>
+   </div>
+ </div>
+</header>
+
+
+<section  class="initial">
+  <div class="container">
+    <div class="row row-align-h-center">
+      <div class="col-md-10">
+        <h2>Left Off canvas Navbar</h2>
+        <p>Achica y agranda el browser para ver como funciona el <strong>Left Off canvas Navbar</strong></p>
+<code><pre>
+&lt;div class="navbar nav-offcanvas"&gt;<br />
+  &lt;a href="#" class="brand"&gt;Brand&lt;/a&gt;<br />
+  &lt;ul role="navigation" id="navigation" class="nav nav-left"&gt;<br />
+    ...<br />
+  &lt;/ul&gt;<br />
+  &lt;button data-collapse data-target="#navigation" class="toggle"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/button&gt;<br />
+&lt;/div&gt;
+</pre></code>
+        <hr />
+        <h3>Ejemplo JQuery</h3>
+        <p>Este ejemplo utiliza JQuery. si lo queres utilizar tal cual copia y pega el siguiente codigo</p>
+<code><pre>
+  jQuery(document).ready(function($) {<br />
+    var getTriggerElement = function(el) {<br />
+      var isCollapse = el.getAttribute('data-collapse');<br />
+      if (isCollapse !== null) {<br />
+        return el;<br />
+      } else {<br />
+        var isParentCollapse = el.parentNode.getAttribute('data-collapse');<br />
+        return (isParentCollapse !== null) ? el.parentNode : undefined;<br />
+      }<br />
+    };<br />
+    var collapseClickHandler = function(event) {<br />
+      var triggerEl = getTriggerElement(event.target);<br />
+      if (triggerEl === undefined) {<br />
+        event.preventDefault();<br />
+        return false;<br />
+      }<br />
+      var targetEl = document.querySelector(triggerEl.getAttribute('data-target'));<br />
+      if (targetEl) {<br />
+        triggerEl.classList.toggle('toggle-active');<br />
+        targetEl.classList.toggle('active');<br />
+      }<br />
+    };<br />
+    document.addEventListener('click', collapseClickHandler, false);<br />
+  });
+</pre></code>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+ @@include('../../include/footer.html')
+ <script>
+    jQuery(document).ready(function($) {
+     // demo navbar js
+     var getTriggerElement = function(el) {
+       var isCollapse = el.getAttribute('data-collapse');
+         if (isCollapse !== null) {
+           return el;
+         } else {
+           var isParentCollapse = el.parentNode.getAttribute('data-collapse');
+           return (isParentCollapse !== null) ? el.parentNode : undefined;
+         }
+       };
+     var collapseClickHandler = function(event) {
+       var triggerEl = getTriggerElement(event.target);
+       if (triggerEl === undefined) {
+         event.preventDefault();
+         return false;
+       }
+       var targetEl = document.querySelector(triggerEl.getAttribute('data-target'));
+       if (targetEl) {
+         triggerEl.classList.toggle('toggle-active');
+         targetEl.classList.toggle('active');
+       }
+     };
+     document.addEventListener('click', collapseClickHandler, false);
+   });
+
+ // agrega la clase 'toggle-active' al toggle btn
+ // agrega la class 'active' al ul#mainnav
+ </script>
+</body>
+
+</html>

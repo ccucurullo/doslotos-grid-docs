@@ -1,9 +1,7 @@
 //__ Main Reset
 @import "../../node_modules/dsgrid/src/scss/grid/_reset.scss";
-
 //__ Main Variables
 @import "../../node_modules/dsgrid/src/scss/grid/_variables.scss";
-
 //__ Main Mixins
 @import "../../node_modules/dsgrid/src/scss/grid/mixins/grid.scss";
 @import "../../node_modules/dsgrid/src/scss/grid/mixins/_global.scss";
@@ -16,28 +14,25 @@
 @import "../../node_modules/dsgrid/src/scss/grid/mixins/_position.scss";
 @import "../../node_modules/dsgrid/src/scss/grid/mixins/_element-align.scss";
 @import "../../node_modules/dsgrid/src/scss/grid/mixins/_retina-img.scss";
-
 //__ Main Utilities
 @import "../../node_modules/dsgrid/src/scss/grid/utilities/_text-align.scss";
-@import "../../node_modules/dsgrid/src/scss/grid/utilities/_color-classes.scss";
 @import "../../node_modules/dsgrid/src/scss/grid/utilities/_images.scss";
-
 //__ Main Structure
 @import "../../node_modules/dsgrid/src/scss/grid/_global.scss";
 @import "../../node_modules/dsgrid/src/scss/grid/_grid.scss";
-
 //__ Components
 @import "../../node_modules/dsgrid/src/scss/grid/_navbar.scss";
-@import "../../node_modules/dsgrid/src/scss/grid/_buttons.scss";
-@import "../../node_modules/dsgrid/src/scss/grid/_hero.scss";
-@import "../../node_modules/dsgrid/src/scss/grid/_cards.scss";
-@import "../../node_modules/dsgrid/src/scss/grid/_tables.scss";
-//@import "../../node_modules/dsgrid/src/scss/grid/_forms.scss";
+@import "../../node_modules/dsgrid/src/scss/grid/_dropdown.scss";
+@import "../../node_modules/dsgrid/src/scss/grid/_responsive-toggleBtn.scss";
+
+
+
+
 
 // Test Components SCSS
 @import 'theme/_forms.scss';
-
 //__ Demo styles
+@import 'theme/_demo-hero.scss';
 @import 'theme/_demo-fonts.scss';
 @import 'theme/_demo-variables.scss';
 @import 'theme/_demo-page.scss';

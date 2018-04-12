@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ @@include('../include/head.html', { "title": "CSS Grid Layout" })
+</head>
+
+ @@include('../include/main-nav.html', { "item": "gridcss-layout" })
+  <h1>Layout</h1>
+  <a href="https://github.com/ccucurullo/dsgrid" class="download-btn" rel="noopener noreferrer" target="_blank">
+    <svg aria-hidden="true" height="30" version="1.1" viewBox="0 0 16 16" width="30">
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+    </svg>
+  </a>
+</header>
+
+<main>
+  <section class="initial">
+    <div class="container">
+      <div class="row">
+        <div class="col-xxs-12">
+          <h2>CSS Grid Layout</h2>
+          <p>Este layout te permite infinidad de estructuras partiendo de una base sólida, definiendo según tu necesidad la cantidad de columnas y rows que utilizaras para tu diseño y sus 'cajas'.</p>
+          <h3>Cómo lo aplico?</h3>
+          <p>Como sucede en el <a href="masonry-layout.html" class="content-link">Masonry Layout</a> por defecto tenemos en nuestro archivo <strong>_variables</strong> seteado la cantidad de columnas por defecto y el quiebre (Breakpoint) de cada una.</p>
+          <ul>
+              <li><em>--gridBox-height</em> -- Valor en pixels o en porcentaje. Define la cantidad de columnas de nuestro layout (seteado por defecto el 33.3%).</li>
+              <li><em>--grid-main-padding</em> -- Valor de padding de cada uno de nuestros items</li>
+              <li><em>--grid-column-space</em> -- Valor de espacios entre columnas</li>
+          </ul>
+          <p>Sabiendo esto ya podemos comenzar a crear, organizar nuestro layout principal. Existen dos propiedades fundamentales que debemos setearle a nuestros 'divs hijos' para la construcción de este layout:</p>
+          <ul>
+              <li><em>grid-row-end: span N;</em> -- Nuestro Row ocupara N 'renglones' de alto</li>
+              <li><em>grid-column-end: span N;</em> -- Nuestra columna se 'estirara' ocupando N columnas de ancho (este numero NO puede exceder el numero total de columnas de nuestro layout)</li>
+          </ul>
+          <p>Estas dos propiedades al igual que cualquier propiedad en CSS acepta media queries lo que significa que podemos varias anchos y altos de nuestra grilla dependiendo del viewport.</p>
+          <hr />
+          <h3>Ejemplo Layout</h3>
+          <div class="example-holder">
+            <div class="grid-layout">
+                <div class="grid-item row-2">
+                    <h3>1. Titulo de la Caja</h3><img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/foodnavigator.com/article/2018/01/05/making-the-cut-is-fat-more-important-in-sweet-or-savoury-foods/7710248-1-eng-GB/Making-the-cut-Is-fat-more-important-in-sweet-or-savoury-foods_wrbm_medium.jpg" class="img-responsive" /><p>The second concept is to give our masonry container (.masonry) a fixed height and then set the flex-direction to column. This technique is not so handy, as you will have to tweak up the height of the container everytime you add new items to the masonry.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>2. Titulo de la Caja</h3><p>The second concept is to give our masonry container (.masonry) a fixed height and then set the flex-direction to column. This technique is not so handy, as you will have to tweak up the height of the container everytime you add new items to the masonry.</p>
+                </div>
+                <div class="grid-item row-2">
+                    <img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/foodnavigator.com/article/2018/01/05/making-the-cut-is-fat-more-important-in-sweet-or-savoury-foods/7710248-1-eng-GB/Making-the-cut-Is-fat-more-important-in-sweet-or-savoury-foods_wrbm_medium.jpg" class="img-responsive" /><h3>3. Titulo de la Caja</h3><p>The second concept is to give our masonry container (.masonry) a fixed height and then set the flex-direction to column. This technique is not so handy, as you will have to tweak up the height of the container everytime you add new items to the masonry.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>4. Titulo de la Caja</h3><p>The second concept is to give our masonry container (.masonry) a fixed height and then set the flex-direction to column. This technique is not so handy, as you will have to tweak up the height of the container everytime you add new items to the masonry.</p>
+                </div>
+                <div class="grid-item col-2">
+                    <h3>5. Titulo de la Caja</h3><p>The second concept is to give our masonry container (.masonry) a fixed height and then set the flex-direction to column. This technique is not so handy, as you will have to tweak up the height of the container everytime you add new items to the masonry.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>6. Titulo de la Caja</h3><p>The second concept is to give our masonry container (.masonry) a fixed height and then set the flex-direction to column. This technique is not so handy, as you will have to tweak up the height of the container everytime you add new items to the masonry.</p>
+                </div>
+                <div class="grid-item row-2">
+                    <h3>7. Titulo de la Caja</h3><p>The second concept is to give our masonry container (.masonry) a fixed height and then set the flex-direction to column. This technique is not so handy, as you will have to tweak up the height of the container everytime you add new items to the masonry.</p><img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/foodnavigator.com/article/2018/01/05/making-the-cut-is-fat-more-important-in-sweet-or-savoury-foods/7710248-1-eng-GB/Making-the-cut-Is-fat-more-important-in-sweet-or-savoury-foods_wrbm_medium.jpg" class="img-responsive" /><p>The second concept is to give our masonry container (.masonry) a fixed height and then set the flex-direction to column. This technique is not so handy, as you will have to tweak up the height of the container everytime you add new items to the masonry.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>8. Titulo de la Caja</h3><p>The second concept is to give our masonry container (.masonry) a fixed height and then set the flex-direction</p><img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/foodnavigator.com/article/2018/01/05/making-the-cut-is-fat-more-important-in-sweet-or-savoury-foods/7710248-1-eng-GB/Making-the-cut-Is-fat-more-important-in-sweet-or-savoury-foods_wrbm_medium.jpg" class="img-responsive" />
+                </div>
+                <div class="grid-item row-2">
+                    <h3>9. Titulo de la Caja</h3><img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/foodnavigator.com/article/2018/01/05/making-the-cut-is-fat-more-important-in-sweet-or-savoury-foods/7710248-1-eng-GB/Making-the-cut-Is-fat-more-important-in-sweet-or-savoury-foods_wrbm_medium.jpg" class="img-responsive" /><p>The second concept is to give our masonry container (.masonry) a fixed height and then set the flex-direction to column. This technique is not so handy, as you will have to tweak up the height of the container everytime you add new items to the masonry.</p><p>The second concept is to give our masonry container (.masonry) a fixed height and then set the flex-direction to column. This technique is not so handy, as you will have to tweak up the height of the container everytime you add new items to the masonry.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>10. Titulo de la Caja</h3><p>The second concept is to give our masonry container (.masonry) a fixed height and then set the flex-direction to column. This technique is not so handy, as you will have to tweak up the height of the container everytime you add new items to the masonry.</p>
+                </div>
+            </div>
+          </div>
+<code><pre>
+&lt;div class="grid-layout"&gt;<br />
+  &lt;div&gt;...&lt;/div&gt;<br />
+  ...<br />
+&lt;/div&gt;
+</pre></code>
+        </div> <!-- Main Column -->
+      </div> <!-- Main Row -->
+    </div> <!-- Main Container -->
+  </section>
+</main>
+
+@@include('../include/pre-footer.html')
+</div>
+ @@include('../include/footer.html')
+</body>
+
+</html>

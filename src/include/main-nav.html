@@ -2,31 +2,36 @@
   <aside class="navigation">
     <div class="aside-head">
       <a href="/">dosLotos Grid</a>
-      <small>Version 1.0.0</small>
+      <small>Version @@for (var i = 0; i < version.length; i++) {`+version[i]+`}</small>
     </div>
     <ul>
-        <li class="dropdown"><a href="#">Base</a>
+        <li @@if (item === 'grid') { class="active" }><a href="/grid.html">Base</a></li>
+        <li class="dropdown@@if (item === 'text-align' || item === 'responsive' || item === 'deeps' || item === 'iframes' || item === 'images') { open}"><a href="#">Utilidades</a>
           <ul>
-              <li><a href="/grid.html">dosLotos Grid</a></li>
-              <li><a href="/base/responsive.html">Breakpoints</a></li>
+              <li @@if (item === 'text-align') { class="active" }><a href="/utilidades/text-align.html">Alineacion de Texto</a></li>
+              <li @@if (item === 'responsive') { class="active" }><a href="/utilidades/responsive.html">Breakpoints</a></li>
+              <li @@if (item === 'deeps') { class="active" }><a href="/utilidades/deeps.html">Elevaciones</a></li>
+              <li @@if (item === 'iframes') { class="active" }><a href="/utilidades/iframes.html">Responsive Embed</a></li>
+              <li @@if (item === 'images') { class="active" }><a href="/utilidades/images.html">Imágenes</a></li>
           </ul>
         </li>
-        <li class="dropdown"><a href="#">Layout</a>
+        <li class="dropdown@@if (item === 'container' || item === 'row-aligment' || item === 'grid-grid' || item === 'offset-cols' || item === 'order-cols' || item === 'auto-grid' || item === 'masonry-layout' || item === 'gridcss-layout') { open}"><a href="#">Layout</a>
           <ul>
-              <li><a href="/layout/container.html">Container</a></li>
-              <li><a href="/layout/row-aligment.html">Row Aligns</a></li>
-              <li><a href="/layout/grid.html">Grilla</a></li>
-              <li><a href="/layout/offset-cols.html">Offset Cols</a></li>
-              <li><a href="/layout/order-cols.html">Cols Order</a></li>
-              <li><a href="/layout/auto-grid.html">Auto Grid</a></li>
-              <li><a href="/layout/masonry-layout.html">Masonry</a></li>
+              <li @@if (item === 'container') { class="active" }><a href="/layout/container.html">Container</a></li>
+              <li @@if (item === 'row-aligment') { class="active" }><a href="/layout/row-aligment.html">Row Aligns</a></li>
+              <li @@if (item === 'grid-grid') { class="active" }><a href="/layout/grid.html">Grilla</a></li>
+              <li @@if (item === 'offset-cols') { class="active" }><a href="/layout/offset-cols.html">Offset Columnas</a></li>
+              <li @@if (item === 'order-cols') { class="active" }><a href="/layout/order-cols.html">Orden Columnas</a></li>
+              <li @@if (item === 'auto-grid') { class="active" }><a href="/layout/auto-grid.html">Auto Grid</a></li>
+              <li @@if (item === 'masonry-layout') { class="active" }><a href="/layout/masonry-layout.html">Masonry Layout</a></li>
+              <li @@if (item === 'gridcss-layout') { class="active" }><a href="/layout/gridcss-layout.html">Grid CSS Layout</a></li>
           </ul>
         </li>
-        <li><a href="/componentes/navbar/index.html">Nav Bar</a></li>
+        <li @@if (item === 'navbar') { class="active" }><a href="/componentes/navbar/index.html">Navbar</a></li>
+        <li class="descargar"><a href="https://github.com/ccucurullo/dsgrid/archive/master.zip">Descargar <span>(zip from master)</span></a></li>
     </ul>
 </aside>
 <a data-collapse="" data-target="#navigation" data-toggle="close-overlay" class="overlay"></a>
-
 
 <div class="page">
   <header class="page-header">
