@@ -37,7 +37,7 @@
     "run-sequence": "^1.2.2"
   },
   "dependencies": {
-    "doslotos-grid": "^1.0.5",
+    "doslotos-grid": "https://github.com/ccucurullo/doslotos-grid.git#master",
     "jquery": "^3.2.1"
   }
 }
