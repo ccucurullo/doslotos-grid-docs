@@ -75,17 +75,3 @@
  .row-5{
    grid-row-end: span 5;
  }
-
-
-
-
-
-
-
-
- .retina-img{
-   @include retina-image(160px, 160px, "/doslotos-grid/images/con-retina", "jpg");
- }
- .no-retina-img{
-   background-image: url("/doslotos-grid/images/sin-retina.jpg");
- }
